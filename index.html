@@ -73,7 +73,7 @@ const initial={accountName:'Google Ads 项目运营',currency:'USD',timezone:'�
 websites:[{id:1,name:'每日知识站',url:'daily-knowledge.example',campaign:'内容网站增长计划',visits:18320,impressions:58400,revenue:1038.2,status:'正常'},{id:2,name:'在线效率工具',url:'smart-tools.example',campaign:'工具类网站获客',visits:12760,impressions:41300,revenue:721.6,status:'正常'},{id:3,name:'垂直内容站',url:'topic-hub.example',campaign:'垂直内容测试组',visits:8420,impressions:28600,revenue:289.7,status:'维护中'},{id:4,name:'高价值内容页',url:'premium-pages.example',campaign:'高价值页面优化',visits:21450,impressions:69400,revenue:1269.8,status:'正常'}],
 generatedDaily:{},revenues:[],daily:[],nextId:10};
 // 先在 Supabase 项目设置中填入 Project URL 和 anon/public key。切勿使用 service_role 密钥。
-const SUPABASE_URL='https://fycgjldunqluzwlwrxtj.supabase.co/rest/v1/';
+const SUPABASE_URL='https://fycgjldunqluzwlwrxtj.supabase.co';
 const SUPABASE_ANON_KEY='sb_publishable_PcaU9tmTLl7YuWJpD0qnzg_2HcqGVK8';
 let sb=null, cloudUser=null, cloudUpdatedAt=null, cloudChannel=null, cloudSaveTimer=null, applyingRemote=false;
 let state=loadState();let currency=state.currency||'USD';let currentModalSave=null;
